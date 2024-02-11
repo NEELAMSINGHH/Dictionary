@@ -1,12 +1,12 @@
 C++ Dictionary Project
 This is a simple C++ dictionary project implemented using a trie data structure. The dictionary allows users to insert words along with their definitions and search for definitions based on the input word.
 
-Table of Contents
-Getting Started
-Usage
-Implementation Details
-Contributing
-License
+ Table of Contents
+1. Getting Started
+2. Usage
+3. Implementation Details
+4. Contributing
+   
 Getting Started
 To get started with this project, you'll need a C++ compiler installed on your system. This project uses standard C++ libraries, so no additional dependencies are required.
 
@@ -35,11 +35,13 @@ Copy code
 Definition of 'apple': A fruit that grows on trees and is typically red, yellow, or green.
 Definition of 'banana': A long curved fruit that grows in clusters and has soft pulpy flesh and yellow skin when ripe.
 Definition of 'dog': Word not found in dictionary.
+
 Implementation Details
 The dictionary is implemented using a trie data structure, which is a tree-like data structure used for efficient retrieval of key-value pairs.
 Each node in the trie represents a single character of a word. The TrieNode class holds a map of child nodes representing possible next characters in the word.
 The Trie class provides methods to insert words and their definitions into the trie and to search for the definition of a given word.
 Words are inserted character by character into the trie, and the isEndOfWord flag is set to true for the last character of each word.
 Definitions are associated with each word and stored in the trie node corresponding to the last character of the word.
+
 Contributing
 Contributions are welcome! If you have any ideas, improvements, or bug fixes, feel free to open an issue or submit a pull request.
