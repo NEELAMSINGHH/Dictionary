@@ -44,12 +44,9 @@ Building and Running:
 
 Ensure you have a C++ compiler installed on your system.
 Compile the source code (main.cpp) using the compiler.
-css
-Copy code
-g++ main.cpp -o wordweb_dictionary
+g++ Dictionary.cpp -o Dictionary
+
 Run the compiled executable.
-bash
-Copy code
-./wordweb_dictionary
+./Dictionary
 Contributors:
 Neelam Singh
