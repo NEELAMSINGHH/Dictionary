@@ -1,47 +1,55 @@
-C++ Dictionary Project
-This is a simple C++ dictionary project implemented using a trie data structure. The dictionary allows users to insert words along with their definitions and search for definitions based on the input word.
+WeebWeb Dictionary
+Introduction:
 
- Table of Contents
-1. Getting Started
-2. Usage
-3. Implementation Details
-4. Contributing
-   
-Getting Started
-To get started with this project, you'll need a C++ compiler installed on your system. This project uses standard C++ libraries, so no additional dependencies are required.
+WordWeb Dictionary is a simple command-line dictionary program implemented in C++. It allows users to search for word definitions, retrieve a random word, and view recent searches. This project is built using a trie data structure for efficient word storage and retrieval.
 
-Clone the Repository: Clone this repository to your local machine using the following command:
+Features:
 
-bash
-Copy code
-git clone <repository-url>
-Compile the Code: Navigate to the directory where you cloned the repository and compile the code using a C++ compiler. For example:
+Word Search: Users can search for the definition of any word present in the dictionary.
 
+Random Word Generation: Users can get a random word along with its definition from the dictionary.
+
+Recent Searches: The program keeps track of the last 10 searched words, allowing users to view their recent searches.
+
+Implementation Details:
+
+Trie Data Structure: The dictionary is implemented using a trie, a tree-like data structure used for efficient retrieval of a key in a large set of strings.
+
+Recent Search Cache: The program maintains a cache of the last 10 searched words using a queue and a set. This allows quick retrieval of recent searches and ensures that the cache does not exceed 10 words.
+
+User Interface: The program presents a simple command-line interface where users can choose from various options using a menu.
+
+How to Use:
+
+Search for a Word:
+
+Choose option 1 from the menu.
+Enter the word you want to search for.
+The program will display the definition of the word if found in the dictionary.
+Get Word of the Day:
+
+Select option 2 from the menu.
+The program will display a random word along with its definition.
+View Recent Searches:
+
+Choose option 3 from the menu.
+The program will display the last 10 searched words.
+Exit:
+
+Select option 4 from the menu to exit the program.
+Dependencies:
+
+C++ Standard Library
+Building and Running:
+
+Ensure you have a C++ compiler installed on your system.
+Compile the source code (main.cpp) using the compiler.
 css
 Copy code
-g++ main.cpp -o dictionary
-Run the Program: Run the compiled executable to execute the dictionary program:
-
+g++ main.cpp -o wordweb_dictionary
+Run the compiled executable.
 bash
 Copy code
-./dictionary
-Usage
-After running the program, you can insert words along with their definitions into the dictionary. Once inserted, you can search for the definitions of specific words.
-
-Example usage:
-
-vbnet
-Copy code
-Definition of 'apple': A fruit that grows on trees and is typically red, yellow, or green.
-Definition of 'banana': A long curved fruit that grows in clusters and has soft pulpy flesh and yellow skin when ripe.
-Definition of 'dog': Word not found in dictionary.
-
-Implementation Details
-The dictionary is implemented using a trie data structure, which is a tree-like data structure used for efficient retrieval of key-value pairs.
-Each node in the trie represents a single character of a word. The TrieNode class holds a map of child nodes representing possible next characters in the word.
-The Trie class provides methods to insert words and their definitions into the trie and to search for the definition of a given word.
-Words are inserted character by character into the trie, and the isEndOfWord flag is set to true for the last character of each word.
-Definitions are associated with each word and stored in the trie node corresponding to the last character of the word.
-
-Contributing
-Contributions are welcome! If you have any ideas, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+./wordweb_dictionary
+Contributors:
+Neelam Singh
